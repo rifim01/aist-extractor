@@ -7,6 +7,7 @@ function ProcessingStep({ files, onProcessing, loading }) {
   useEffect(() => {
     if (!loading) return;
     processFiles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   const processFiles = async () => {
