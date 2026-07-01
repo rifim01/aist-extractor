@@ -2,9 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "devCommand": "npm start",
-  "env": {
-    "REACT_APP_GOOGLE_SHEETS_API_KEY": "@google_sheets_api_key"
-  },
   "headers": [
     {
       "source": "/service-worker.js",
