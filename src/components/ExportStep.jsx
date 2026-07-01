@@ -3,7 +3,6 @@ import Papa from 'papaparse';
 
 function ExportStep({ data, onReset }) {
   const [exported, setExported] = useState(false);
-  const [googleAuth, setGoogleAuth] = useState(false);
 
   const downloadCSV = () => {
     const csvData = data.map(row => ({
@@ -39,7 +38,6 @@ function ExportStep({ data, onReset }) {
   };
 
   const appendToGoogleSheet = async () => {
-    // Simplified version - requires Google Sheets API setup
     const apiKey = 'YOUR_GOOGLE_SHEETS_API_KEY';
     const spreadsheetId = 'YOUR_SPREADSHEET_ID';
     const range = 'INPUT_DOCK_1!A4';
